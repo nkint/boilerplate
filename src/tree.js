@@ -44,12 +44,12 @@ class Tree {
 
     this.branches = range(5).reduce((acc, i) => {
       if (acc.length === 0) {
-        const branch0 = new Branch(new Vec2D())
+        const branch0 = new Branch(new Vec2D(), 2)
         return acc.concat([branch0])
       } else {
         const lastBranch = acc[acc.length - 1]
         const direction = random(-Math.PI / 5, Math.PI / 5)
-        const branch1 = new Branch(lastBranch.end, direction)
+        const branch1 = new Branch(lastBranch.end, 2, direction)
         return acc.concat([branch1])
       }
     }, [])
