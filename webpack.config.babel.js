@@ -6,8 +6,8 @@ import path from 'path'
 import V8LazyParseWebpackPlugin from 'v8-lazy-parse-webpack-plugin'
 
 // const __MAIN = './main-regl.js'
-// const __MAIN = './p5-example.js'
-const __MAIN = './vanilla-canvas.js'
+const __MAIN = './p5-example.js'
+// const __MAIN = './vanilla-canvas.js'
 
 const ENV = process.env.NODE_ENV || 'development'
 const _DEV_ = ENV === 'development'
