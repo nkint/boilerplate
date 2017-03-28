@@ -18,8 +18,9 @@ const s = function (p) {
     p.translate(p.width / 2, p.height / 2)
     p.rotate(Math.PI)
 
-    p.stroke(255)
+    p.stroke(255, 255, 255, 50)
     tree.branches.forEach(branch => {
+      p.strokeWeight(branch.weight)
       p.line(
         branch.start.x,
         branch.start.y,
@@ -27,6 +28,7 @@ const s = function (p) {
         branch.end.y
       )
 
+      p.strokeWeight(1)
       p.ellipse(
         branch.start.x,
         branch.start.y,
@@ -35,7 +37,7 @@ const s = function (p) {
     })
   }
 
-  p.mousePressed = function() {
+  p.mousePressed = function () {
     tree = new Tree()
   }
 }
