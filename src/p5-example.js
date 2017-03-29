@@ -7,7 +7,9 @@ const s = function (p) {
   let tree = new Tree()
 
   p.setup = function () {
-    p.createCanvas(640, 360)
+    const bodyWidth = window.innerWidth
+    const bodyHeight = window.innerHeight
+    p.createCanvas(bodyWidth, bodyHeight)
 
     console.log(tree)
   }
