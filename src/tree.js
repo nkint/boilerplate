@@ -1,4 +1,3 @@
-import clamp from 'lodash/clamp'
 import range from 'lodash/range'
 import random from 'lodash/random'
 import toxi from 'toxiclibsjs'
